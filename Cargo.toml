@@ -1,5 +1,5 @@
 [package]
-name = "actix-maud-htmx-h5bp"
+name = "htmx-playground"
 version = "0.1.1"
 edition = "2021"
 
@@ -8,5 +8,5 @@ edition = "2021"
 [dependencies]
 actix-files = "0.6"
 actix-web = "4"
-maud = { version="0.24", features = ["actix-web"] }
+maud = { version="0.25", features = ["actix-web"] }
 serde = { version = "1", features = ["derive"] }

@@ -68,7 +68,7 @@ async fn main() -> std::io::Result<()> {
             .service(ActixFiles::new("/", "./src/static").prefer_utf8(true))
             .default_service(route().to(not_found))
     })
-    .bind(("127.0.0.1", 8080))?
+    .bind(("0.0.0.0", 8080))?
     .run()
     .await
 }
